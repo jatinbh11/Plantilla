@@ -7,6 +7,9 @@ import { Dialog, Transition } from '@headlessui/react';
 import { RxCross2 } from 'react-icons/rx';
 import { useSelector } from 'react-redux';
 import plantilla from './Plant.png';
+import profileImage from './user.png';
+
+
 
 function Navbar() {
   const context = useContext(myContext);
@@ -112,7 +115,7 @@ function Navbar() {
                   <a href="#" className="-m-2 flex items-center p-2">
                     <img
                       src="img/indiaflag.png"
-                      alt=""
+                      alt="#"
                       className="block h-auto w-5 flex-shrink-0"
                     />
                     <span className="ml-3 block text-base font-medium text-gray-900" style={{ color: mode === 'dark' ? 'white' : '', }}>INDIA</span>
@@ -197,8 +200,7 @@ function Navbar() {
                   <a href="#" className="flex items-center text-gray-700 ">
                     <img
                       className="inline-block w-10 h-10 rounded-full"
-                      src="https://avatar.iran.liara.run/public/boy?username=Ash"
-                      alt="error"
+                      src={profileImage} alt="usericon"    
                     />
                   </a>
                 </div>
